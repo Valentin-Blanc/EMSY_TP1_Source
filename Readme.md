@@ -89,6 +89,7 @@ cd /
 Q5. Que signifie l'option `-l` avec la commande `ls` 
 
 > votre réponse ?!
+VBC : la commande ls permet d'afficher tout le contenu d'un repertoire et le -l permet d'avoir les information sous leur forme long(je suppose avec toute les infos possible)
 
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
