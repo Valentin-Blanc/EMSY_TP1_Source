@@ -94,7 +94,19 @@ Q5. Que signifie l'option `-l` avec la commande `ls`
 Q6. Décrypter la ligne où se trouve le répertoire **home**    
 
 [Placer votre capture d'écran]()
-
+VBC :
+![Virtual disk](/Images/Q6_VBC.jpg)
+la premiere lettre dit le le "file type" dans se cas la "d" veut dire directory
+les 9 prochain caractaire disent les permissions. ces permission sont divisé par groupe de 3 caravtaire. les 3 premier pour le "owner", les trois d'après " groupe" et les trois dernière "other"
+	les trois permission possible sont:
+		r = read
+		w = write 
+		x = execute
+le chiffre après donne le nombre de hard links la 1
+après le owner la root 
+après le owning groupe la root
+après le file size la 60 octet
+après la derniere modification la sep 24 13:14
 > votre réponse ?!
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
