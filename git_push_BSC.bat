@@ -1,7 +1,7 @@
 @echo off
 title Git Push - EMSY_TP1_Source
 
-cd /d "C:\BSC\EMSY\EMSY_TP1_Source"
+cd /d "C:\BSC\EMSY\EMSY_TP1_Source" 
 
 echo.
 echo ========================================
