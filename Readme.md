@@ -153,11 +153,17 @@ VBC : /dev/sda est un chemin d'accés qui mène a l'adresse du premier disque du
 
 **M.** Installez SparkyLinux
 
-![Placer vos captures d'écrans de l'installation]()
+![Placer vos captures d'écrans de l'installation]()  
+VBC:  
+![Virtual disk](/Images/InstalationLinux1_VBC.jpg)  
+![Virtual disk](/Images/InstalationLinux2_VBC.jpg)  
+![Virtual disk](/Images/InstalationLinux3_VBC.jpg)  
+![Virtual disk](/Images/InstalationLinux4_VBC.jpg)  
 
 Q13. Quelle est la taille de disque minimum recommandée pour installer la distribution Sparky en mode cli 
 
-> votre réponse ?!
+> votre réponse ?!  
+VBC: 2 Go  
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
 
