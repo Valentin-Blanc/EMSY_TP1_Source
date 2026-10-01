@@ -95,54 +95,59 @@ Q6. Décrypter la ligne où se trouve le répertoire **home**
 
 [Placer votre capture d'écran]()
 VBC :
-![Virtual disk](/Images/Q6_VBC.jpg)
-la premiere lettre dit le le "file type" dans se cas la "d" veut dire directory
-les 9 prochain caractaire disent les permissions. ces permission sont divisé par groupe de 3 caravtaire. les 3 premier pour le "owner", les trois d'après " groupe" et les trois dernière "other"
-	les trois permission possible sont:
-		r = read
-		w = write 
-		x = execute
-le chiffre après donne le nombre de hard links la 1
-après le owner la root 
-après le owning groupe la root
-après le file size la 60 octet
-après la derniere modification la sep 24 13:14
+![Virtual disk](/Images/Q6_VBC.jpg)  
+la premiere lettre dit le le "file type" dans se cas la "d" veut dire directory  
+les 9 prochain caractaire disent les permissions. ces permission sont divisé par groupe de 3 caravtaire. les 3 premier pour le "owner", les trois d'après " groupe" et les trois dernière "other"  
+	les trois permission possible sont:  
+		r = read  
+		w = write   
+		x = execute  
+le chiffre après donne le nombre de hard links la 1  
+après le owner la root   
+après le owning groupe la root  
+après le file size la 60 octet  
+après la derniere modification la sep 24 13:14  
 > votre réponse ?!
 
 **J.** Créez un répertoire de travail nommé « EMSY_VosInitiales» 
+écrire sudo avant si pas de permission
+VBC: Commande = mkdir nom_dossier  -X = rien crée le dossier, -v comfirme la creation du dossier -p crée les dossier entre si il n'existe pas (ex -p parent/enfant/xxx crée parent et enfant si il nexiste pas deja
 
 Q7. dans quel dossier racine allez-vous le placer (justifiez votre réponse) 
-
-> votre réponse ?! 
+> votre réponse ?!  
+VBC: dans le fichier home car c'est le fichier des utilisateur.  
 
 Q8. Quelle commande allez-vous utiliser pour faire ceci ?  
-
-> votre commande ?! 
+> votre commande ?!  
+VBC: sudo mkdir -p /home/EMSY_VBC    
 
 **K.** Dans ce répertoire, créez un fichier texte que vous nommerez `TESTSLO_XXX_XXX` et éditez celui en écrivant un texte, exemple : "TP linux by XXX et XXX".
 	   Utiliser la commande `vi`
-
 > votre commande ?! 
+VBC: sudo vi TESTSLO_VBC  
 
 Q9. Pouvez-vous éditez un fichier uniquement avec la commande `vi` 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC: non il faut mettre sudo devant sinon on ne peux pas crée le fichier  
 
 Q10. Si vous éteignez la machine virtuelle et que vous la rallumez, est-ce que le répertoire créé ci-dessus existe toujours (justifiez votre réponse) ? 
+> votre réponse ?!  
+VBC: onon car la mémoire utilisé par ma machine virtuelle est un live cd. Ce qui veux dire que la la mémoire est dans la RAM donc quand on l'eteint elle oublie tout.  
 
-> votre réponse ?!
 
 **L.** Tapez la commande `ls -l /dev/sda` 
-
 ![Placer votre capture d'écran]() 
+vbc:  
+![Virtual disk](/Images/QL_VBC.jpg)  
+Q11. Que signifie **sda** ?  
+> votre réponse ?!  
+VBC: sda  désigne le premier disque de stockage détecté par le système  
+plus précisément sd parle de trouvé un disque et a de prendre le premier (exemple si je met sdb ca prendra le deuxième disque trouvé)  
 
-Q11. Que signifie **sda** ? 
-
-> votre réponse ?!
 
 Q12. Quelle différence y a-t-il entre le répertoire de la question Q6 et celui du point L (justifiez votre réponse) ?
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC : /dev/sda est un chemin d'accés qui mène a l'adresse du premier disque dure trouvé alors que /home est un répertoire ou l'on peut crée des fichier.  
 
 ## Installation de SparkyLinux sur la VM
 
