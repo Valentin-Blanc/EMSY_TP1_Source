@@ -216,7 +216,8 @@ Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous
 VBC:sudo mv /etc/apt/sources.list.d/sparky-unstable.list /etc/apt/sources.list.d/sparky-unstable.list.disabled  
 sudo nano /etc/apt/sources.list puis ctrl+o et ctrl+x  
 sudo apt install git  
-il faut faire tout ca car des protections ont été mise sur notre version sparkylinux  
+il faut faire tout ca car des protections ont été mise sur notre version sparkylinux. Car le logiciel n'est plus mit a jour.  
+Sinon juste la derniere commande aurais suffis.  
 
 Q20. Que veut dire `apt` ?  
 > votre réponse ?!  
