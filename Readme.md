@@ -166,68 +166,90 @@ Q13. Quelle est la taille de disque minimum recommandée pour installer la distr
 VBC: 2 Go  
 
 Q14. A quoi sert la partition swap ? Est-ce que ce principe existe-t-il sur les OS Microsoft Windows ? 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC: Une partition swap est un disque dur qui peux aidé la RAM (meme si ca sera plus lent)si le PC demande plus de RAM.  
+Sur Windows les partition swap n'existe pas vraiment mais des subsitution a celle si existe.  
 
 Q15. Quel format pourriez-vous utiliser pour la 3ème partition afin qu’elle soit également accessible depuis un OS Microsoft ? 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC: Une partition de format NTFS peux etre utilisé sur windows et linux.  
 
 Q16. Durant l’installation, on vous demande deux noms d’utilisateur. A quoi correspondent-ils ? 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC:Le premier est le nom de l'ost et le deuxieme est un nom de compte utilisateur.  
 
 **N.** Une fois l’installation de Linux terminée, prenez une capture d’écran du démarrage de votre système (GRUB)
-
-![Placer votre capture d'écran]() 
-
+![Placer votre capture d'écran]()  
+VBC:  
+![Virtual disk](/Images/QN_VBC.jpg)  
+ 
 **O.** Trouvez la ou les lignes de commande permettant de changer le clavier et procédez à la configuiration 
 
-> votre commande ?! 
+> votre commande ?!  
+VBC: sudo dpkg-reconfigure keyboard-configuration  
 
-![Placer votre capture d'écran]() 
+![Placer votre capture d'écran]()  
+![Virtual disk](/Images/QO_VBC.jpg)  
 
 **P.** Tapez la commande : `nano -version`
-
 ![Placer votre capture d'écran]() 
-
+VBC:  
+![Virtual disk](/Images/QP_VBC.jpg)  
+ 
 Q17. A quoi sert `nano` ? 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC: nano est une application qui sert à édité et crée des fichier texte.  GIT
 
 **Q.** Testez si l’application `git` est installée sur votre distribution, si ce n’est pas le cas installez un client git. 
 
 Q18. Comment savoir si `git` est déjà installé ? 
+> votre réponse ?!  
+VBC: la commande which nom_de_l'app permet de savoir le chemin d'accés de l'app.  
+Vu que git na pas de chemin d'acces il n'est pas installé. 
 
-> votre réponse ?!
-
-> votre commande ?! 
+> votre commande ?!  
+VBC: which git   
 
 Q19. Si le client `git` n'est pas installé, quelle(s) commande(s) utilisez-vous pour l’installer ? 
 
-> votre commande ?! 
+> votre commande ?!  
+VBC:sudo mv /etc/apt/sources.list.d/sparky-unstable.list /etc/apt/sources.list.d/sparky-unstable.list.disabled  
+sudo nano /etc/apt/sources.list puis ctrl+o et ctrl+x  
+sudo apt install git  
+il faut faire tout ca car des protections ont été mise sur notre version sparkylinux  
 
-Q20. Que veut dire `apt` ? 
-
-> votre réponse ?!
+Q20. Que veut dire `apt` ?  
+> votre réponse ?!  
+VBC: APT veut dire Advanced Package Tool. C'est le gestionnaire de paquets par défaut chez Debian.  
 
 Q21. Est-ce que cette commande (`apt`) peut être utilisée sur toutes les distributions Linux (justifiez votre réponse)? 
-
-> votre réponse ?!
+> votre réponse ?!  
+VBC: non car comme dit dans la question de avant apt est utilisé par defaut sur Debian. EX sur Fedora on utilise dnf.  
 
 **R.** Créez un sous-répertoire « EMSY_TP1_XXX-YYY » dans le répertoire de votre utilisateur. 
        
 **Attention** : Ici on veut que l’utilisateur (vous) ait les droits de lecture, d’écriture et d’exécution.
-
-> votre commande ?! 
+> votre commande ?!  
+VBC: mkdir -m 700 EMSY_TP1_VBC-2026  
 
 Q22. Quel est le répertoire utilisateur ?  
 
-> votre réponse ?!
+> votre réponse ?!  
+le répertoire du deuxieme compte que on a crée qui n'est pas l'administrateur pour moi valentin22.  
 
 Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture - écriture - execution) ?  
 
-> votre commande ?! 
+> votre commande ?!  
+VBC: chmode XYZ nom_fichier  
+X : droits du propriétaire  
+Y : droits du groupe  
+Z : droits des autres utilisateurs  
+7	rwx  
+6	rw-  
+5	r-x  
+4	r--  
+0	---  
+d'où le 700 pour X=rwx et Y/Z=---  
 
 **S.** Dans ce répertoire, tapez la commande : `git clone https://github.com/votreDepot/EMSY_TP1_Source`
 
@@ -235,17 +257,19 @@ Q23. Quelles sont les commandes pour changer les droits d'utilisateurs (lecture 
 
 Q24. Qu’observez-vous dans ce répertoire ?
 
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran]()  
+VBC: je vois tout mes dossier dans le quelle je travaille depuis le debut pour se TP.  
+![Virtual disk](/Images/Q24_VBC.jpg)  
 
 **T.** Editez le fichier source `.c` avec l’éditeur de texte « nano ». -> Réalisez un petit programme en C (par exemple de type « Hello world »).
-
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran]()  
+VBC: ![Virtual disk](/Images/QT_VBC.jpg)  
 
 **U.**	Vérifiez si le compilateur `gcc` est bien installé. Notez la version du logiciel
-
-> votre réponse ?!
-
-![Placer votre capture d'écran]()
+> votre réponse ?!  
+VBC: oui gcc est pas installé.  
+![Placer votre capture d'écran]()  
+VBC: ![Virtual disk](/Images/QU_VBC.jpg)  
 
 **U-A.** Tapez les commandes suivantes :
 ```Shell 
@@ -253,22 +277,23 @@ gcc -Wall -o fichier.o -c fichier.c
 gcc -o fichier fichier.o 
 ```
 Remarque : « fichier » est à remplacer par le nom de votre choix
-
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran]()  
+VBC: ![Virtual disk](/Images/QU-A_VBC.jpg) 
 
 Q25. Quels sont les fichiers qui ont été générés 
+> votre réponse ?!  
+VBC: le fichier mainVBC et mainVBC.o
 
-> votre réponse ?!
-
-![Placer votre capture d'écran]()
+![Placer votre capture d'écran]()  
+VBC: ![Virtual disk](/Images/QU-A_VBC.jpg) 
 
 **V.** Entrez la commande suivante : `./fichier`
+![Placer votre capture d'écran]()  
+VBC: ![Virtual disk](/Images/QV_VBC.jpg)  
 
-![Placer votre capture d'écran]()
-
-Q26. Que se passe-t-il ?
-
-> votre réponse ?!
+Q26. Que se passe-t-il ?  
+> votre réponse ?!  
+VBC: Ca a lancer mon code quand j'avais crée avant. Où j'ai ecrit Hello world. Problème vu que je n'avais pas mit de retour a la ligne il est ecrit sur la meme ligne que les info dans l'emplacement ou je suis.
 
 
 
