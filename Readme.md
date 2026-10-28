@@ -262,13 +262,13 @@ Q24. Qu’observez-vous dans ce répertoire ?
 
 **T.** Editez le fichier source `.c` avec l’éditeur de texte « nano ». -> Réalisez un petit programme en C (par exemple de type « Hello world »).
 ![Placer votre capture d'écran]()  
-VBC: ![Virtual disk](/Images/QT_VBC.jpg)  
+ ![Virtual disk](/Images/QT_VBC.jpg)  
 
 **U.**	Vérifiez si le compilateur `gcc` est bien installé. Notez la version du logiciel
 > votre réponse ?!  
  oui gcc est pas installé.  
 ![Placer votre capture d'écran]()  
-VBC: ![Virtual disk](/Images/QU_VBC.jpg)  
+ ![Virtual disk](/Images/QU_VBC.jpg)  
 
 **U-A.** Tapez les commandes suivantes :
 ```Shell 
@@ -277,14 +277,14 @@ gcc -o fichier fichier.o
 ```
 Remarque : « fichier » est à remplacer par le nom de votre choix
 ![Placer votre capture d'écran]()  
-VBC: ![Virtual disk](/Images/QU-A_VBC.jpg) 
+ ![Virtual disk](/Images/QU-A_VBC.jpg) 
 
 Q25. Quels sont les fichiers qui ont été générés 
 > votre réponse ?!  
  le fichier mainVBC et mainVBC.o
 
 ![Placer votre capture d'écran]()  
-VBC: ![Virtual disk](/Images/QU-A_VBC.jpg) 
+ ![Virtual disk](/Images/QU-A_VBC.jpg) 
 
 **V.** Entrez la commande suivante : `./fichier`
 ![Placer votre capture d'écran]()  
